@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".QuestionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:id="@+id/text_que_continent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Which continent is Country located in?"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_continent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/q1c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice1" />
+
+                <RadioButton
+                    android:id="@+id/q1c2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice2" />
+
+                <RadioButton
+                    android:id="@+id/q1c3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice3" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_que_neighbor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="2. Which of the following is a neighbor of Country?"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_neighbor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/q2c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice1" />
+
+                <RadioButton
+                    android:id="@+id/q2c2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice2" />
+
+                <RadioButton
+                    android:id="@+id/q2c3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="choice3" />
+
+                <RadioButton
+                    android:id="@+id/q2c4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Neighbor" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
